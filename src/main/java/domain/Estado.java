@@ -1,11 +1,6 @@
 package domain;
 
-public abstract class Estado {
-  protected Mascota mascota;
-
-  public Estado(Mascota mascota){
-    this.mascota = mascota;
-  }
+public interface Estado {
 
   public abstract void juga(Mascota mascota);
   public abstract void come(Mascota mascota);

@@ -9,7 +9,7 @@ public class Mascota {
   private Integer vecesJugando;
 
   public Mascota(){
-    this.estado         = new Contento(this);
+    this.estado         = new Contento();
     this.nivelFelicidad = 10;
     this.tiempoAburrido = 0;
     this.vecesJugando   = 0;

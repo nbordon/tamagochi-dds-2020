@@ -1,9 +1,6 @@
 package domain;
 
-public class Hambriento extends Estado {
-  public Hambriento(Mascota mascota) {
-    super(mascota);
-  }
+public class Hambriento implements Estado {
 
   @Override
   public void juga(Mascota mascota) {
@@ -12,7 +9,7 @@ public class Hambriento extends Estado {
 
   @Override
   public void come(Mascota mascota) {
-    mascota.setEstado(new Contento(this.mascota));
+    mascota.setEstado(new Contento());
   }
 
   @Override
