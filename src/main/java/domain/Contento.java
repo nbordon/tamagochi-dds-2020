@@ -7,21 +7,21 @@ public class Contento extends Estado {
   }
 
   @Override
-  public void juga(Mascota mascota) {
-    mascota.aumentarNivelFelicidad(2);
-    if (mascota.getVecesJugando() > 5){
-      mascota.setVecesJugando(0);
-      mascota.setEstado(new Hambriento(this.mascota));
+  public void juga() {
+    this.mascota.aumentarNivelFelicidad(2);
+    if (this.mascota.getVecesJugando() > 5){
+      this.mascota.setVecesJugando(0);
+      this.mascota.setEstado(new Hambriento(this.mascota));
     }
   }
 
   @Override
-  public void come(Mascota mascota) {
-    mascota.aumentarNivelFelicidad(1);
+  public void come() {
+    this.mascota.aumentarNivelFelicidad(1);
   }
 
   @Override
-  public Boolean puedeJugar(Mascota mascota) {
+  public Boolean puedeJugar() {
     return true;
   }
 }

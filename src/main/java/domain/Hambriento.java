@@ -6,17 +6,17 @@ public class Hambriento extends Estado {
   }
 
   @Override
-  public void juga(Mascota mascota) {
+  public void juga() {
 
   }
 
   @Override
-  public void come(Mascota mascota) {
-    mascota.setEstado(new Contento(this.mascota));
+  public void come() {
+    this.mascota.setEstado(new Contento(this.mascota));
   }
 
   @Override
-  public Boolean puedeJugar(Mascota mascota) {
+  public Boolean puedeJugar() {
     return false;
   }
 }

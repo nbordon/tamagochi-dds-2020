@@ -7,7 +7,7 @@ public abstract class Estado {
     this.mascota = mascota;
   }
 
-  public abstract void juga(Mascota mascota);
-  public abstract void come(Mascota mascota);
-  public abstract Boolean puedeJugar(Mascota mascota);
+  public abstract void juga();
+  public abstract void come();
+  public abstract Boolean puedeJugar();
 }

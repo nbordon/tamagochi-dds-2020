@@ -7,19 +7,19 @@ public class Aburrido extends Estado {
   }
 
   @Override
-  public void juga(Mascota mascota) {
-    mascota.setEstado(new Contento(this.mascota));
+  public void juga() {
+    this.mascota.setEstado(new Contento(this.mascota));
   }
 
   @Override
-  public void come(Mascota mascota) {
-    if (mascota.getTiempoAburrido() > 80){
-      mascota.setEstado(new Contento(this.mascota));
+  public void come() {
+    if (this.mascota.getTiempoAburrido() > 80){
+      this.mascota.setEstado(new Contento(this.mascota));
     }
   }
 
   @Override
-  public Boolean puedeJugar(Mascota mascota) {
+  public Boolean puedeJugar() {
     return true;
   }
 }

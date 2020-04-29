@@ -17,15 +17,15 @@ public class Mascota {
 
   public void juga(){
     this.incrementarVecesJugand();
-    this.estado.juga(this);
+    this.estado.juga();
   }
 
   public void come(){
-    this.estado.come(this);
+    this.estado.come();
   }
 
   public Boolean puedeJugar(){
-    return this.estado.puedeJugar(this);
+    return this.estado.puedeJugar();
   }
 
   public void setEstado(Estado estado) {
